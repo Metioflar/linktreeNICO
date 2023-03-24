@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:ital,wght@0,600;0,700;0,800;1,200;1,400&family=Sono:wght@400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --fonteSecundaria: 'Nunito', sans-serif;
+    --FonteExtra: 'Sono';
+    --FontePrincipal: 'Abril Fatface';
+    --cor-Bg: #e9e5e5;
+    --cor-hover: #8a8af3;
+    --cor-botoes: #6161a3 ;
+}
+body{
+    background-image: url(IMG/black-texture.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.link-bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-Bg);
+    width: 350px;
+    border-radius: 20px;
+}
+.link-bio img{
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.link-bio h1{
+    font-size: 3rem;
+    font-family: var(--FontePrincipal);
+    color: #3e3e71;
+}
+.link-bio p{
+    font-family: var(--fonteSecundaria);
+    margin: 10px 40px 10px 40px;
+    font-size: 1rem;
+    color: #2b2b4c;
+    text-align: center;
+}
+/* em -> viewport inteira; rem-> considera o elemento pai, toda vez que o elemento pai for redimensionado é feito um calculo com a fonte*/
+.link-bio a{
+    background-color:var(--cor-botoes);
+    color: var(--cor-Bg);
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 5px;
+    width: 70%;
+    border-radius: 40px;
+    padding: 10px;
+}
+.link-bio a:hover{
+    transition: 1s;
+    background: var(--cor-hover);
+    
+}
